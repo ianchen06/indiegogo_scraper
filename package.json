@@ -1,0 +1,10 @@
+{
+  "name": "igg_crawler",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "chromeless": "^1.3.0",
+    "nano-fs": "^1.2.4"
+  }
+}
