@@ -1,7 +1,7 @@
 import os
 import requests
 
-for pg in range(1,11):
+for pg in range(101,201):
     response = requests.post(
         'https://www.indiegogo.com/private_api/discover',
         headers={'Accept': 'application/json, '
@@ -70,4 +70,5 @@ for pg in range(1,11):
     urls = [x.get('clickthrough_url')
             for x in discover['response']['discoverables']]
     for url in urls:
-        os.system("node indiegogo.js %s" % url)
+        print("[INFO] %s"%url)
+        os.system("node igg.js %s" % url)
